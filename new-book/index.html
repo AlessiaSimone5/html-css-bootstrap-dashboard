@@ -11,11 +11,16 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!--/css bootstrap-->
 
+    <!-- fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- /fontawesome-->
 </head>
 
 <body>
     <!--inestazione pagina-->
-
     <header class="mb-4">
         <!--navbar-->
         <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
@@ -42,9 +47,13 @@
                         <li class="nav-item">
                             <a class="nav-link disabled" aria-disabled="true">Help</a>
                         </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 bg-light" type="search" placeholder="Cerca..."
+                            aria-label="Search" />
+                        <button class="btn btn-outline-light" type="submit">Cerca</button>
+                    </form>
                 </div>
-            </div>
-            </div>
             </div>
         </nav>
         <!--/navbar-->
@@ -57,12 +66,12 @@
             <div class="row">
                 <div class="col-12">
                     <!--intestazione colonna 1-->
-                    <div class="row align-items-center "></div>
+                    <div class="row align-items-center mb-4"></div>
                     <div class="col-12">
                         <h2 class="fs-3 fw-normal mb-4">Catalogo Libri</h2>
                     </div>
                 </div>
-                <!--intestazione colonna 1-->
+                <!--/intestazione colonna 1-->
                 <div class="row">
                     <div class="col-6 mb-3">
                         <label for="firstName" class="form-label">Nome Autore</label>
@@ -72,7 +81,7 @@
                             Valid first name is required.
                         </div>
                     </div>
-                    <div class="col-sm-6 mb-3">
+                    <div class="col-6 mb-3">
                         <label for="lastName" class="form-label">Cognome Autore</label>
                         <input type="text" class="form-control" id="lastName"
                             placeholder="Inserisci il cognome dell'autore" value="" required="">
@@ -91,7 +100,7 @@
                     </div>
                     <div class="container text-center">
                         <div class="row align-items-start">
-                            <div class="col">
+                            <div class="col-12 col-lg-4 mb-3">
                                 Genere
                                 <select class="form-select" aria-label="Default select example">
                                     <option selected>Scegli il genere</option>
@@ -100,38 +109,46 @@
                                     <option value="3">Three</option>
                                 </select>
                             </div>
-                            <div class="col">
+                            <div class="col-12 col-lg-4 mb-3">
                                 Anno di pubblicazione
                                 <input class="form-control" type="text" placeholder="Inserisci l'anno"
                                     aria-label="default input example">
                             </div>
-                            <div class="col">
+                            <div class="col-12 col-lg-4 mb-3">
                                 ISBN#
                                 <input class="form-control" type="text" placeholder="Inserisci il cosice ISBN#"
                                     aria-label="default input example">
                             </div>
                         </div>
                     </div>
-                    <hr class="my-5">
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Note</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                            placeholder="Inserisci eventuali note sul libro"></textarea>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label mb-3" for="flexCheckDefault">
-                            Disponibile anche in digitale
-                        </label>
+
+                    <hr class="my-4">
+
+                    <div class="row">
                         <div class="col-12 mb-3">
-                            <input type="submit" class="btn btn-primary" value="Aggiungi Libro" />
+                            <label for="exampleFormControlTextarea1" class="form-label">Note</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Inserisci eventuali note sul libro"></textarea>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label mb-3" for="flexCheckDefault">
+                                Disponibile anche in digitale
+                            </label>
+                            <div class="col-12 mb-3">
+                                <input type="submit" class="btn btn-primary" value="Aggiungi Libro" />
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
     </main>
     <!--/corpo della pagina-->
+    <!-- bootstrap js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- /bootstrap js-->
 </body>
 
 </html>
